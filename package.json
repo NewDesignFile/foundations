@@ -1,0 +1,49 @@
+{
+  "name": "@new-ui/foundations",
+  "version": "1.0.0",
+  "description": "Foundations for New UI Design System",
+  "source": "src/index.scss",
+  "main": "dist/index.css",
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewDesignFile/foundations.git"
+  },
+  "keywords": [
+    "foundations",
+    "typography",
+    "responsive",
+    "type",
+    "type-styles",
+    "modular",
+    "type",
+    "tokens",
+    "desktop",
+    "mobile",
+    "colors",
+    "spacings",
+    "spacing-blocks"
+  ],
+  "author": "Abhimanyu Rana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NewDesignFile/foundations/issues"
+  },
+  "homepage": "https://github.com/NewDesignFile/foundations#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "autoprefixer": "^10.4.13",
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "@new-ui/colors": "^1.2.2",
+    "@new-ui/spacings": "^1.0.2",
+    "@new-ui/typography": "^1.0.3"
+  }
+}
