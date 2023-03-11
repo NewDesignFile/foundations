@@ -42,7 +42,7 @@
     "parcel": "^2.8.3"
   },
   "dependencies": {
-    "@new-ui/colors": "^1.2.3",
+    "@new-ui/colors": "^1.2.8",
     "@new-ui/effects": "^0.1.1",
     "@new-ui/spacings": "^1.0.2",
     "@new-ui/typography": "^1.0.3"
