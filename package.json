@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/foundations",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "Foundations for New UI Design System",
   "source": "src/index.scss",
   "main": "dist/index.css",
