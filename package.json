@@ -44,7 +44,7 @@
   "dependencies": {
     "@new-ui/colors": "^1.2.11",
     "@new-ui/effects": "^0.1.0",
-    "@new-ui/spacings": "^0.1.0",
+    "@new-ui/spacings": "^0.1.1",
     "@new-ui/typography": "^0.1.3"
   }
 }
