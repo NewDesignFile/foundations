@@ -30,3 +30,6 @@ To get started quickly, you can use the CDN files.
   * `is-` and has- for specific states, such as `.nu-is-active` or `.nu-is-disabled`. These state-based classes - would apply to
   * `js-` for targeting JavaScript-specific functionality, such as `.js-modal-trigger`. No styles are bound to these classes; they’re reserved for behavior only. For most cases, these `js-` classes would toggle - state-based classes to an element.
 
+## Guides
+- [Get a Figma copy](https://www.figma.com/community/file/1325646289622213496/new-ui)
+- [Read our getting started guide](https://new-ui.com/docs/getting-started/installation)
