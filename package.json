@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/foundations",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "New UI Foundations",
   "source": "src/index.scss",
   "main": "dist/index.css",
@@ -46,7 +46,7 @@
   "dependencies": {
     "@new-ui/colors": "^1.3.1",
     "@new-ui/effects": "^0.1.4",
-    "@new-ui/reset": "^0.0.6",
+    "@new-ui/reset": "^0.0.7",
     "@new-ui/spacings": "^0.1.4",
     "@new-ui/typography": "^0.1.7"
   }

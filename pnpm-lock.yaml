@@ -15,8 +15,8 @@ importers:
         specifier: ^0.1.4
         version: 0.1.4
       '@new-ui/reset':
-        specifier: ^0.0.6
-        version: 0.0.6
+        specifier: ^0.0.7
+        version: 0.0.7
       '@new-ui/spacings':
         specifier: ^0.1.4
         version: 0.1.4
@@ -120,8 +120,8 @@ packages:
   '@new-ui/effects@0.1.4':
     resolution: {integrity: sha512-dgJPMKaqn1hbcYfT4SW/y8C39+PfF+1uVI/DJyim8+GZ5E8Yqisfs+MTdVByn0d1jHy6AZkCBRpiXeQfoXI6hA==}
 
-  '@new-ui/reset@0.0.6':
-    resolution: {integrity: sha512-uM2gTBzbmCldp1amRJM3y7kUk1IzmMYegP4JLXyWqS6yArc+K8iwGmhnDeA81tyc6jy3tp7haCnMPziPxXnVaA==}
+  '@new-ui/reset@0.0.7':
+    resolution: {integrity: sha512-y2TdhXrQK0YhBlf1Bf/RqB8RHKdtthTiMIPyQOemk5/q+TmbHP4TQX2mpEQNnB9g0aEtq4NFixgbdSyCBY5Nvw==}
 
   '@new-ui/spacings@0.1.4':
     resolution: {integrity: sha512-/vKV+hWF++wiut1yfNUYgy3xiwwUn7+QWfahWBB1auAw1v3ol4dlvNQ7PHCNaCxLbIwgTMmWFsG965W0AuLseA==}
@@ -1043,7 +1043,7 @@ snapshots:
 
   '@new-ui/effects@0.1.4': {}
 
-  '@new-ui/reset@0.0.6': {}
+  '@new-ui/reset@0.0.7': {}
 
   '@new-ui/spacings@0.1.4': {}
 
