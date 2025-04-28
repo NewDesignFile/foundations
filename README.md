@@ -26,16 +26,14 @@ Set the theme by adding the `data-new-ui-theme` attribute to your HTML wrapper e
 <html data-new-ui-theme="light">
 ```
 
-|---
-| Available themes | Value
-|-|:-|:-
-| Light (Default) | `light`
-| Light warm | `light--warm`
-| Light cold | `light--cold`
-| Dark  (Default) | `dark`
-| Dark warm | `dark--warm`
-| Dark cold | `dark--cold`
-|---
+Available themes  | Value
+:--- |:---
+Light (Default) | `light`
+Light warm | `light--warm`
+Light cold | `light--cold`
+Dark  (Default) | `dark`
+Dark warm | `dark--warm`
+Dark cold | `dark--cold`
 
 
 #### Usage guide
