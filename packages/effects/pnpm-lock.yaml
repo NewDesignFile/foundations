@@ -7,22 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@new-ui/colors':
-        specifier: ^2.0.0
-        version: 2.0.0
-      '@new-ui/effects':
-        specifier: ^0.1.4
-        version: 0.1.4
-      '@new-ui/reset':
-        specifier: ^0.0.8
-        version: 0.0.8
-      '@new-ui/spacings':
-        specifier: ^0.1.4
-        version: 0.1.4
-      '@new-ui/typography':
-        specifier: ^0.1.7
-        version: 0.1.7
     devDependencies:
       '@parcel/transformer-sass':
         specifier: ^2.14.4
@@ -113,21 +97,6 @@ packages:
     resolution: {integrity: sha512-x0fWaQtYp4E6sktbsdAqnehxDgEc/VwM7uLsRCYWaiGu0ykYdZPiS8zCWdnjHwyiumousxfBm4SO31eXqwEZhQ==}
     cpu: [x64]
     os: [win32]
-
-  '@new-ui/colors@2.0.0':
-    resolution: {integrity: sha512-qATqQwIAEssQLwKPlcRyBOMAY3d9wr/zZplF6mvKAGnu1Ofnivoy1F0kLXPb7SyPmBLJ71RMNqHy2GX5rw8gVg==}
-
-  '@new-ui/effects@0.1.4':
-    resolution: {integrity: sha512-dgJPMKaqn1hbcYfT4SW/y8C39+PfF+1uVI/DJyim8+GZ5E8Yqisfs+MTdVByn0d1jHy6AZkCBRpiXeQfoXI6hA==}
-
-  '@new-ui/reset@0.0.8':
-    resolution: {integrity: sha512-vntCa7E4bzgIbGQIBYyQrpEZuOVazgNMhoLcYiOZls3O+J8/gTlStDs3uJLvdiTKvF0xwRyjhIZ119IuhOjMQQ==}
-
-  '@new-ui/spacings@0.1.4':
-    resolution: {integrity: sha512-/vKV+hWF++wiut1yfNUYgy3xiwwUn7+QWfahWBB1auAw1v3ol4dlvNQ7PHCNaCxLbIwgTMmWFsG965W0AuLseA==}
-
-  '@new-ui/typography@0.1.7':
-    resolution: {integrity: sha512-uDlkxaZJVKBHrVkG2cEcBhUdCrWkz+tuMf6rJQK9bCtApSd0Gor/+UfmLoxPusDr6tvnQuzcoao+260gc018GQ==}
 
   '@parcel/bundler-default@2.14.4':
     resolution: {integrity: sha512-JVqi5Sb7wv2KCTJFAAjHbnl6KC61jKNVYw/GtZm5s/Wxqvxx2tcp93rmRoBFo9X3gSgkg8jp4HkNAUHTxnsPnQ==}
@@ -1048,16 +1017,6 @@ snapshots:
 
   '@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3':
     optional: true
-
-  '@new-ui/colors@2.0.0': {}
-
-  '@new-ui/effects@0.1.4': {}
-
-  '@new-ui/reset@0.0.8': {}
-
-  '@new-ui/spacings@0.1.4': {}
-
-  '@new-ui/typography@0.1.7': {}
 
   '@parcel/bundler-default@2.14.4(@parcel/core@2.14.4(@swc/helpers@0.5.17))':
     dependencies:

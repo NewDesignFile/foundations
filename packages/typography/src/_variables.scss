@@ -1,0 +1,88 @@
+:root {
+  /* System Font Stacks */
+  --system-ui: system-ui, sans-serif;
+  --transitional: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  --old-style: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  --humanist: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+  --geometric-humanist: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  --classical-humanist: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+  --neo-grotesque: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+  --monospace-slab-serif: 'Nimbus Mono PS', 'Courier New', monospace;
+  --monospace-code: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  --industrial: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+  --rounded-sans: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+  --slab-serif: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+  --antique: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+  --didone: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
+  --handwritten: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+
+  /* Mobile */
+  --mobile-heading-01: 2rem;
+  --mobile-heading-02: 1.75rem;
+  --mobile-heading-03: 1.5rem;
+  --mobile-heading-04: 1.25rem;
+  --mobile-heading-05: 1.125rem;
+  --mobile-heading-06: 1rem;
+
+  --mobile-body-xl: 1rem;
+  --mobile-body: 0.875rem;
+  --mobile-body-sm: 0.75rem;
+
+  --mobile-caption: 0.75rem;
+  --mobile-helper-text: 0.75rem;
+  --mobile-code: 0.875rem;
+
+  --lh-mobile-heading-01: 2.5rem;
+  --lh-mobile-heading-02: 2.25rem;
+  --lh-mobile-heading-03: 1.875rem;
+  --lh-mobile-heading-04: 1.75rem;
+  --lh-mobile-heading-05: 1.625rem;
+  --lh-mobile-heading-06: 1.5rem;
+
+  --lh-mobile-body-xl: 1.5rem;
+  --lh-mobile-body: 1.25rem;
+  --lh-mobile-body-sm: 1rem;
+
+  --lh-mobile-caption: 1rem;
+  --lh-mobile-helper-text: 1rem;
+  --lh-mobile-code: 1.25rem;
+
+  --mobile-tracking-heading-01: -0.05rem;
+  --mobile-tracking-heading-02: -0.025rem;
+  --mobile-tracking-heading-03: -0.025rem;
+
+  /* Desktop */
+  --desktop-heading-01: 3.375rem;
+  --desktop-heading-02: 2.625rem;
+  --desktop-heading-03: 2rem;
+  --desktop-heading-04: 1.75rem;
+  --desktop-heading-05: 1.25rem;
+  --desktop-heading-06: 1.125rem;
+
+  --desktop-body-xl: 1.125rem;
+  --desktop-body: 1rem;
+  --desktop-body-sm: 0.875rem;
+
+  --desktop-caption: 0.75rem;
+  --desktop-helper-text: 0.75rem;
+  --desktop-code: 0.875rem;
+
+  --lh-desktop-heading-01: 4rem;
+  --lh-desktop-heading-02: 3.125rem;
+  --lh-desktop-heading-03: 2.5rem;
+  --lh-desktop-heading-04: 2.25rem;
+  --lh-desktop-heading-05: 1.75rem;
+  --lh-desktop-heading-06: 1.625rem;
+
+  --lh-desktop-body-xl: 1.625rem;
+  --lh-desktop-body: 1.5rem;
+  --lh-desktop-body-sm: 1.25rem;
+
+  --lh-desktop-caption: 1rem;
+  --lh-desktop-helper-text: 1rem;
+  --lh-desktop-code: 1.25rem;
+
+  --desktop-tracking-heading-01: -0.075rem;
+  --desktop-tracking-heading-02: -0.05rem;
+  --desktop-tracking-heading-03: -0.025rem;
+}

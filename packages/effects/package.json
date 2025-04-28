@@ -1,7 +1,7 @@
 {
-  "name": "@new-ui/foundations",
-  "version": "0.2.4",
-  "description": "New UI Foundations",
+  "name": "@new-ui/effects",
+  "version": "0.1.5",
+  "description": "Layering, elevations, and effects styles.",
   "source": "src/index.scss",
   "main": "dist/index.css",
   "targets": {
@@ -21,20 +21,6 @@
     "type": "git",
     "url": "git+https://github.com/NewDesignFile/foundations.git"
   },
-  "keywords": [
-    "foundations",
-    "typography",
-    "colors",
-    "spacings",
-    "responsive",
-    "modular",
-    "type",
-    "tokens",
-    "desktop",
-    "mobile",
-    "reset",
-    "new"
-  ],
   "author": "@planetabhi",
   "license": "MIT",
   "bugs": {
@@ -45,12 +31,5 @@
     "@parcel/transformer-sass": "^2.14.4",
     "autoprefixer": "^10.4.21",
     "parcel": "^2.14.4"
-  },
-  "dependencies": {
-    "@new-ui/colors": "^2.0.0",
-    "@new-ui/effects": "^0.1.4",
-    "@new-ui/reset": "^0.0.8",
-    "@new-ui/spacings": "^0.1.4",
-    "@new-ui/typography": "^0.1.7"
   }
 }

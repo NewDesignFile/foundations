@@ -7,22 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@new-ui/colors':
-        specifier: ^2.0.0
-        version: 2.0.0
-      '@new-ui/effects':
-        specifier: ^0.1.4
-        version: 0.1.4
-      '@new-ui/reset':
-        specifier: ^0.0.8
-        version: 0.0.8
-      '@new-ui/spacings':
-        specifier: ^0.1.4
-        version: 0.1.4
-      '@new-ui/typography':
-        specifier: ^0.1.7
-        version: 0.1.7
     devDependencies:
       '@parcel/transformer-sass':
         specifier: ^2.14.4
@@ -33,6 +17,12 @@ importers:
       parcel:
         specifier: ^2.14.4
         version: 2.14.4(@swc/helpers@0.5.17)(postcss@8.5.3)
+      postcss:
+        specifier: ^8.5.3
+        version: 8.5.3
+      postcss-scss:
+        specifier: ^4.0.9
+        version: 4.0.9(postcss@8.5.3)
 
 packages:
 
@@ -113,21 +103,6 @@ packages:
     resolution: {integrity: sha512-x0fWaQtYp4E6sktbsdAqnehxDgEc/VwM7uLsRCYWaiGu0ykYdZPiS8zCWdnjHwyiumousxfBm4SO31eXqwEZhQ==}
     cpu: [x64]
     os: [win32]
-
-  '@new-ui/colors@2.0.0':
-    resolution: {integrity: sha512-qATqQwIAEssQLwKPlcRyBOMAY3d9wr/zZplF6mvKAGnu1Ofnivoy1F0kLXPb7SyPmBLJ71RMNqHy2GX5rw8gVg==}
-
-  '@new-ui/effects@0.1.4':
-    resolution: {integrity: sha512-dgJPMKaqn1hbcYfT4SW/y8C39+PfF+1uVI/DJyim8+GZ5E8Yqisfs+MTdVByn0d1jHy6AZkCBRpiXeQfoXI6hA==}
-
-  '@new-ui/reset@0.0.8':
-    resolution: {integrity: sha512-vntCa7E4bzgIbGQIBYyQrpEZuOVazgNMhoLcYiOZls3O+J8/gTlStDs3uJLvdiTKvF0xwRyjhIZ119IuhOjMQQ==}
-
-  '@new-ui/spacings@0.1.4':
-    resolution: {integrity: sha512-/vKV+hWF++wiut1yfNUYgy3xiwwUn7+QWfahWBB1auAw1v3ol4dlvNQ7PHCNaCxLbIwgTMmWFsG965W0AuLseA==}
-
-  '@new-ui/typography@0.1.7':
-    resolution: {integrity: sha512-uDlkxaZJVKBHrVkG2cEcBhUdCrWkz+tuMf6rJQK9bCtApSd0Gor/+UfmLoxPusDr6tvnQuzcoao+260gc018GQ==}
 
   '@parcel/bundler-default@2.14.4':
     resolution: {integrity: sha512-JVqi5Sb7wv2KCTJFAAjHbnl6KC61jKNVYw/GtZm5s/Wxqvxx2tcp93rmRoBFo9X3gSgkg8jp4HkNAUHTxnsPnQ==}
@@ -897,6 +872,12 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
+  postcss-scss@4.0.9:
+    resolution: {integrity: sha512-AjKOeiwAitL/MXxQW2DliT28EKukvvbEWx3LBmJIRN8KfBGZbRTxNYW0kSqi1COiTZ57nZ9NW06S6ux//N1c9A==}
+    engines: {node: '>=12.0'}
+    peerDependencies:
+      postcss: ^8.4.29
+
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
@@ -1048,16 +1029,6 @@ snapshots:
 
   '@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3':
     optional: true
-
-  '@new-ui/colors@2.0.0': {}
-
-  '@new-ui/effects@0.1.4': {}
-
-  '@new-ui/reset@0.0.8': {}
-
-  '@new-ui/spacings@0.1.4': {}
-
-  '@new-ui/typography@0.1.7': {}
 
   '@parcel/bundler-default@2.14.4(@parcel/core@2.14.4(@swc/helpers@0.5.17))':
     dependencies:
@@ -2118,6 +2089,10 @@ snapshots:
   picocolors@1.1.1: {}
 
   picomatch@2.3.1: {}
+
+  postcss-scss@4.0.9(postcss@8.5.3):
+    dependencies:
+      postcss: 8.5.3
 
   postcss-value-parser@4.2.0: {}
 
