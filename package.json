@@ -1,7 +1,7 @@
 {
   "name": "@new-ui/foundations",
-  "version": "0.2.4",
-  "description": "New UI Foundations",
+  "version": "0.2.5",
+  "description": "New UI foundations",
   "source": "src/index.scss",
   "main": "dist/index.css",
   "targets": {
@@ -26,11 +26,10 @@
     "typography",
     "colors",
     "spacings",
-    "responsive",
+    "ui",
     "modular",
     "type",
-    "tokens",
-    "desktop",
+    "design-tokens",
     "mobile",
     "reset",
     "new"
@@ -47,10 +46,10 @@
     "parcel": "^2.14.4"
   },
   "dependencies": {
-    "@new-ui/colors": "^2.0.0",
-    "@new-ui/effects": "^0.1.4",
-    "@new-ui/reset": "^0.0.8",
-    "@new-ui/spacings": "^0.1.4",
-    "@new-ui/typography": "^0.1.7"
+    "@new-ui/colors": "^2.0.1",
+    "@new-ui/effects": "^0.1.5",
+    "@new-ui/reset": "^0.0.9",
+    "@new-ui/spacings": "^0.1.5",
+    "@new-ui/typography": "^0.1.8"
   }
 }
