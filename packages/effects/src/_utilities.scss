@@ -1,0 +1,27 @@
+.sh-dialog--strong {
+  box-shadow: var(--dialog-strong);
+}
+
+.sh-dialog {
+  box-shadow: var(--dialog);
+}
+
+.sh-content {
+  box-shadow: var(--content);
+}
+
+.sh-canvas {
+  box-shadow: var(--canvas);
+}
+
+.sh-default {
+  box-shadow: var(--focus-default);
+}
+
+.sh-accent {
+  box-shadow: var(--focus-accent);
+}
+
+.sh-inverse {
+  box-shadow: var(--focus-inverse);
+}

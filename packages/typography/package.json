@@ -1,7 +1,7 @@
 {
-  "name": "@new-ui/foundations",
-  "version": "0.2.4",
-  "description": "New UI Foundations",
+  "name": "@new-ui/typography",
+  "version": "0.1.7",
+  "description": "Modular typographic scale for your apps and websites.",
   "source": "src/index.scss",
   "main": "dist/index.css",
   "targets": {
@@ -22,18 +22,15 @@
     "url": "git+https://github.com/NewDesignFile/foundations.git"
   },
   "keywords": [
-    "foundations",
     "typography",
-    "colors",
-    "spacings",
     "responsive",
+    "type",
+    "type-styles",
     "modular",
     "type",
     "tokens",
     "desktop",
-    "mobile",
-    "reset",
-    "new"
+    "mobile"
   ],
   "author": "@planetabhi",
   "license": "MIT",
@@ -44,13 +41,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.14.4",
     "autoprefixer": "^10.4.21",
-    "parcel": "^2.14.4"
-  },
-  "dependencies": {
-    "@new-ui/colors": "^2.0.0",
-    "@new-ui/effects": "^0.1.4",
-    "@new-ui/reset": "^0.0.8",
-    "@new-ui/spacings": "^0.1.4",
-    "@new-ui/typography": "^0.1.7"
+    "parcel": "^2.14.4",
+    "postcss-node-sass": "^3.1.4"
   }
 }
