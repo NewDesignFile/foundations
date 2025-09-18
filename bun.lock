@@ -11,9 +11,9 @@
         "@new-ui/typography": "^0.1.8",
       },
       "devDependencies": {
-        "@parcel/transformer-sass": "^2.14.4",
+        "@parcel/transformer-sass": "^2.15.4",
         "autoprefixer": "^10.4.21",
-        "parcel": "^2.14.4",
+        "parcel": "^2.15.4",
       },
     },
   },
