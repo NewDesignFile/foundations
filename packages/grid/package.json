@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/grid",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Lightweight flex grid.",
   "source": "src/index.scss",
   "main": "dist/index.css",

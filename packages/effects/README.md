@@ -11,7 +11,7 @@ To get started quickly, you can use the CDN files.
 
 ```html
 <!-- Place this at the html head -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@new-ui/effects@<version>/dist/index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@new-ui/effects@latest/dist/index.css">
 ```
 
 ## Usage
