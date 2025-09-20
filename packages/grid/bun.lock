@@ -4,7 +4,6 @@
     "": {
       "name": "@new-ui/grid",
       "devDependencies": {
-        "@new-ui/reset": "^0.0.9",
         "@parcel/transformer-sass": "^2.16.0",
         "autoprefixer": "^10.4.21",
         "parcel": "^2.16.0",
@@ -41,8 +40,6 @@
     "@msgpackr-extract/msgpackr-extract-linux-x64": ["@msgpackr-extract/msgpackr-extract-linux-x64@3.0.3", "", { "os": "linux", "cpu": "x64" }, "sha512-cvwNfbP07pKUfq1uH+S6KJ7dT9K8WOE4ZiAcsrSes+UY55E/0jLYc+vq+DO7jlmqRb5zAggExKm0H7O/CBaesg=="],
 
     "@msgpackr-extract/msgpackr-extract-win32-x64": ["@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3", "", { "os": "win32", "cpu": "x64" }, "sha512-x0fWaQtYp4E6sktbsdAqnehxDgEc/VwM7uLsRCYWaiGu0ykYdZPiS8zCWdnjHwyiumousxfBm4SO31eXqwEZhQ=="],
-
-    "@new-ui/reset": ["@new-ui/reset@0.0.9", "", {}, "sha512-DnvT9qpzc6IdSHN1UfVddylPxhHLAOht88A8BdZ+Rc33L1+vvdWjLhm2ajZRFhG425bThJ3tq3iOxIqBAclb6A=="],
 
     "@parcel/bundler-default": ["@parcel/bundler-default@2.16.0", "", { "dependencies": { "@parcel/diagnostic": "2.16.0", "@parcel/graph": "3.6.0", "@parcel/plugin": "2.16.0", "@parcel/rust": "2.16.0", "@parcel/utils": "2.16.0", "nullthrows": "^1.1.1" } }, "sha512-8kY+TUhir7qm+TgSMeMd8CP2PVoZjXamiZ8+mbXws4jKw6IrIVDQf8TkBZKGk7ncKJEteiX4ybbmiPjho8cHuA=="],
 
