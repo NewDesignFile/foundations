@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/grid",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Lightweight flex grid.",
   "source": "src/index.scss",
   "main": "dist/index.css",
@@ -36,9 +36,8 @@
   },
   "homepage": "https://github.com/NewDesignFile/foundations#readme",
   "devDependencies": {
-    "@new-ui/reset": "^0.0.8",
-    "@parcel/transformer-sass": "^2.14.4",
+    "@parcel/transformer-sass": "^2.16.0",
     "autoprefixer": "^10.4.21",
-    "parcel": "^2.14.4"
+    "parcel": "^2.16.0"
   }
 }
