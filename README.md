@@ -47,7 +47,7 @@ Dark cold | `dark--cold`
 
 ---
 
-### Design Primitives & Tokens
+### Design Tokens & Primitives
 
 #### Colors
 
@@ -89,7 +89,7 @@ Link | Role
 **`--link`** | Primary link
 **`--link-hover`** | Hover state for primary link
 **`--link-subtle`** | Secondary link
-**`--link-visted`** | Link visited
+**`--link-visited`** | Link visited
 
 Support | Role
 :--- | :---
