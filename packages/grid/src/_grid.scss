@@ -1,131 +1,143 @@
-$base: 0.5rem;
-
+@use "sass:map";
+@use "sass:math";
+$base: 0.5rem !default;
 $breakpoints: (
-  sm: 30rem,
-  md: 64rem,
-  lg: 85rem
-);
-
+ sm: 30rem,
+ md: 64rem,
+ lg: 85rem
+) !default;
+@mixin breakpoint($breakpoint) {
+@if map.has-key($breakpoints, $breakpoint) {
+@media (min-width: map.get($breakpoints, $breakpoint)) {
+@content;
+ }
+ }
+}
+@mixin grid-gutter-reset {
+ margin-left: 0;
+ margin-right: 0;
+ > .col {
+ padding-left: 0;
+ padding-right: 0;
+ }
+}
+%col-base {
+ flex: 1 0 0%;
+ max-width: 100%;
+ min-width: 0;
+ padding: 0 $base;
+ contain: layout;
+}
+%col-flex-column {
+ display: flex;
+ flex-direction: column;
+}
 .container {
-  width: 100%;
-  padding-right: $base;
-  padding-left: $base;
-  margin-right: auto;
-  margin-left: auto;
-  
-  @each $breakpoint, $value in $breakpoints {
-    @media (min-width: $value) {
-      max-width: $value - $base;
-    }
-  }
-}
-
-.grid {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0 (-$base);
-  
-  &--nogutter {
-    margin: 0;
-    
-    > .col {
-      padding: 0;
-    }
-  }
-  
-  &--gap {
-    gap: $base;
-    margin: 0;
-    
-    > .col {
-      padding: 0;
-    }
-  }
-  
-  .grid {
-    margin-left: 0;
-    margin-right: 0;
-    
-    .col {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-  
-  &--start { justify-content: flex-start; }
-  &--center { justify-content: center; }
-  &--end { justify-content: flex-end; }
-  &--around { justify-content: space-around; }
-  &--between { justify-content: space-between; }
-  &--reverse { flex-direction: row-reverse; }
-}
-
-.col {
-  flex: 1 0 0%;
-  max-width: 100%;
-  min-width: 0;
-  padding: 0 $base;
-  
-  @each $breakpoint, $value in $breakpoints {
-    @media (min-width: $value) {
-      &--#{$breakpoint} {
-        flex-basis: 100%;
-        max-width: 100%;
-      }
-    }
-  }
-  
-  &--align {
-    &-top { align-self: flex-start; }
-    &-bottom { align-self: flex-end; }
-    &-middle { align-self: center; }
-  }
-  
-  &--top, &--bottom, &--middle {
-    display: flex;
-    flex-direction: column;
-  }
-  &--top { justify-content: flex-start; }
-  &--bottom { justify-content: flex-end; }
-  &--middle { justify-content: center; }
-  
-  &--first { order: -1; }
-  &--last { order: 1; }
-  
-  &--push-left { margin-right: auto; }
-  &--push-right { margin-left: auto; }
-  
-  &--fixed { flex: 0 0 auto; }
-  
-  @for $i from 2 through 11 {
-    &--grow-#{$i} { flex-grow: $i; }
-  }
-  
-  @for $i from 1 through 12 {
-    &--#{$i} {
-      $width: calc(100% * #{$i} / 12);
-      flex-basis: $width;
-      max-width: $width;
-    }
-  }
-  
-  @for $i from 1 through 11 {
-    &--offset-#{$i} {
-      margin-left: calc(100% * #{$i} / 12);
-    }
-  }
-}
-
+ width: 100%;
+ padding-right: $base;
+ padding-left: $base;
+ margin-right: auto;
+ margin-left: auto;
 @each $breakpoint, $value in $breakpoints {
-  .hidden-#{$breakpoint}-up {
-    @media (min-width: $value) {
-      display: none !important;
-    }
-  }
-  
-  .hidden-#{$breakpoint}-down {
-    @media (max-width: calc(#{$value} - 0.01)) {
-      display: none !important;
-    }
-  }
+@include breakpoint($breakpoint) {
+ max-width: calc(#{$value} - #{$base});
+ }
+ }
+}
+.grid {
+ display: flex;
+ flex-flow: row wrap;
+ margin: 0 (-$base);
+ contain: layout;
+ &--nogutter {
+@include grid-gutter-reset;
+ }
+ &--gap {
+ gap: $base;
+@include grid-gutter-reset;
+ }
+ &--start { justify-content: flex-start; }
+ &--center { justify-content: center; }
+ &--end { justify-content: flex-end; }
+ &--around { justify-content: space-around; }
+ &--between { justify-content: space-between; }
+ &--reverse { flex-direction: row-reverse; }
+}
+.col {
+@extend %col-base;
+ -ms-flex-preferred-size: auto;
+ -ms-flex-negative: 1;
+@each $breakpoint, $value in $breakpoints {
+@include breakpoint($breakpoint) {
+ &--#{$breakpoint} {
+ flex-basis: 100%;
+ max-width: 100%;
+ }
+ }
+ }
+ &--align {
+ &-top { align-self: flex-start; }
+ &-bottom { align-self: flex-end; }
+ &-middle { align-self: center; }
+ }
+ &--top,
+ &--bottom,
+ &--middle {
+@extend %col-flex-column;
+ }
+ &--top { justify-content: flex-start; }
+ &--bottom { justify-content: flex-end; }
+ &--middle { justify-content: center; }
+ &--first { order: -1; }
+ &--last { order: 1; }
+ &--push-left { margin-right: auto; }
+ &--push-right { margin-left: auto; }
+ &--fixed { flex: 0 0 auto; }
+@for $i from 1 through 12 {
+ &--#{$i} {
+ flex-basis: calc(100% * #{$i} / 12);
+ max-width: calc(100% * #{$i} / 12);
+ }
+@if $i < 12 {
+ &--offset-#{$i} {
+ margin-left: calc(100% * #{$i} / 12);
+ }
+ }
+@if $i >= 2 and $i <= 11 {
+ &--grow-#{$i} { flex-grow: $i; }
+ }
+ }
+}
+@each $breakpoint, $value in $breakpoints {
+.hidden-#{$breakpoint}-up {
+@include breakpoint($breakpoint) {
+ display: none !important;
+ }
+ }
+.hidden-#{$breakpoint}-down {
+@media (max-width: calc(#{$value} - 0.01rem)) {
+ display: none !important;
+ }
+ }
+}
+.col--push-left,
+.col--push-right {
+ will-change: margin;
+ contain: layout;
+}
+.grid > .col {
+ box-sizing: border-box;
+}
+@media (prefers-reduced-motion: reduce) {
+.grid--reverse {
+ flex-direction: row;
+ }
+}
+@supports not (gap: 1rem) {
+.grid--gap {
+ margin: 0 calc(-1 * #{$base} / 2);
+ > .col {
+ padding: 0 calc(#{$base} / 2);
+ }
+ }
 }
