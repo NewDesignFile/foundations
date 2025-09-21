@@ -46,10 +46,10 @@
     "parcel": "^2.16.0"
   },
   "dependencies": {
-    "@new-ui/colors": "^2.0.1",
-    "@new-ui/effects": "^0.1.5",
-    "@new-ui/reset": "^0.0.9",
-    "@new-ui/spacings": "^0.1.5",
-    "@new-ui/typography": "^0.1.8"
+    "@new-ui/colors": "^2.0.2",
+    "@new-ui/effects": "^0.1.6",
+    "@new-ui/reset": "^0.1.0",
+    "@new-ui/spacings": "^0.1.6",
+    "@new-ui/typography": "^0.1.9"
   }
 }
