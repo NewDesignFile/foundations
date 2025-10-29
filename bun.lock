@@ -4,7 +4,7 @@
     "": {
       "name": "@new-ui/foundations",
       "dependencies": {
-        "@new-ui/colors": "^2.0.2",
+        "@new-ui/colors": "^2.1.0",
         "@new-ui/effects": "^0.1.6",
         "@new-ui/reset": "^0.1.0",
         "@new-ui/spacings": "^0.1.6",
@@ -48,7 +48,7 @@
 
     "@msgpackr-extract/msgpackr-extract-win32-x64": ["@msgpackr-extract/msgpackr-extract-win32-x64@3.0.3", "", { "os": "win32", "cpu": "x64" }, "sha512-x0fWaQtYp4E6sktbsdAqnehxDgEc/VwM7uLsRCYWaiGu0ykYdZPiS8zCWdnjHwyiumousxfBm4SO31eXqwEZhQ=="],
 
-    "@new-ui/colors": ["@new-ui/colors@2.0.2", "", {}, "sha512-5RLVZHr0t2zA8uHd8bLC1nF7ScLwfTSfDCq99blcDIT9cRvBebF965X8GIoS0oDOk1n4soEZnfp/r0czt9KDpA=="],
+    "@new-ui/colors": ["@new-ui/colors@2.1.0", "", {}, "sha512-bIGi0UZ+qBuG5a2nmKeXXYTB6NwFpG3fH+M0JYswhTQxKyNmFw9OuVHeoH7dyvNzyDVSlFugQz7SkndKccx9uQ=="],
 
     "@new-ui/effects": ["@new-ui/effects@0.1.6", "", {}, "sha512-u8aqF8KX8H65arqp3QtV8jUBmQj+komJklhhqYRIvxl3A0p3+r+dqaFrVIYetDrbCc6qfm59a3ilxa+FeSu+dQ=="],
 
