@@ -141,7 +141,7 @@
   --background-high-contrast: var(--black);
 
   // Borders
-  --border-muted: var(--warm9);
+  --border-muted: var(--warm8);
   --border: var(--warm7);
   --border-strong: var(--warm6);
   --border-inked: var(--warm1);
@@ -153,13 +153,6 @@
   --button-hover: var(--blue3);
   --button-active: var(--blue2);
   --button-disabled: var(--warm8);
-
-  // Icons
-  --icon-primary: var(--warm1);
-  --icon-secondary: var(--warm4);
-  --icon-disabled: var(--warm8);
-  --icon-on-color: var(--white);
-  --icon-inked: var(--white);
 
   // Links
   --link: var(--blue4);
@@ -173,13 +166,13 @@
   --support-success: var(--green4);
   --support-info: var(--blue4);
 
-  // Text
-  --text-primary: var(--warm1);
-  --text-secondary: var(--warm4);
-  --text-secondary-alt: var(--warm6);
-  --text-placeholder: var(--warm7);
-  --text-on-color: var(--white);
-  --text-error: var(--red4);
-  --text-success: var(--green4);
-  --text-inked: var(--white);
+  // Content
+  --content-primary: var(--warm1);
+  --content-secondary: var(--warm4);
+  --content-secondary-alt: var(--warm6);
+  --content-placeholder: var(--warm7);
+  --content-on-color: var(--white);
+  --content-error: var(--red4);
+  --content-success: var(--green4);
+  --content-inked: var(--white);
 }
