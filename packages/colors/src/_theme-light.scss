@@ -130,7 +130,7 @@
   --background-high-contrast: var(--white);
 
   // Borders
-  --border-muted: var(--grey2);
+  --border-muted: var(--grey3);
   --border: var(--grey4);
   --border-strong: var(--grey6);
   --border-inked: var(--grey10);
@@ -142,13 +142,6 @@
   --button-hover: var(--blue6);
   --button-active: var(--blue7);
   --button-disabled: var(--grey4);
-
-  // Icons
-  --icon-primary: var(--grey9);
-  --icon-secondary: var(--grey7);
-  --icon-disabled: var(--grey4);
-  --icon-on-color: var(--white);
-  --icon-inked: var(--black);
 
   // Links
   --link: var(--blue5);
@@ -162,13 +155,13 @@
   --support-success: var(--green5);
   --support-info: var(--blue5);
 
-  // Text
-  --text-primary: var(--grey10);
-  --text-secondary: var(--grey7);
-  --text-secondary-alt: var(--grey5);
-  --text-placeholder: var(--grey4);
-  --text-on-color: var(--white);
-  --text-error: var(--red6);
-  --text-success: var(--green6);
-  --text-inked: var(--black);
+  // Content
+  --content-primary: var(--grey10);
+  --content-secondary: var(--grey7);
+  --content-secondary-alt: var(--grey5);
+  --content-placeholder: var(--grey4);
+  --content-on-color: var(--white);
+  --content-error: var(--red6);
+  --content-success: var(--green6);
+  --content-inked: var(--black);
 }
