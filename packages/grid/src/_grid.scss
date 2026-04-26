@@ -33,8 +33,13 @@ $breakpoints: (
 /// @param {String} $prefix - Optional prefix for responsive columns
 @mixin column-sizes($prefix: '') {
   @for $i from 1 through 12 {
-    $separator: if($prefix != '', '-', '');
-    $width: calc(100% * #{math.div($i, 12)});
+    $separator: '';
+
+    @if $prefix != '' {
+      $separator: '-';
+    }
+
+    $width: math.percentage(math.div($i, 12));
 
     &--#{$prefix}#{$separator}#{$i} {
       flex-basis: $width;
@@ -276,7 +281,7 @@ $breakpoints: (
   }
 
   .hidden-#{$breakpoint}-down {
-    @media (width <=calc(#{$value} - 0.01rem)) {
+    @media (width < #{$value}) {
       display: none !important;
     }
   }
@@ -292,48 +297,8 @@ $breakpoints: (
   .visible-#{$breakpoint}-down {
     display: none !important;
 
-    @media (width <=calc(#{$value} - 0.01rem)) {
+    @media (width < #{$value}) {
       display: block !important;
-    }
-  }
-}
-
-// Accessibility improvements
-@media (prefers-reduced-motion: reduce) {
-  .grid--reverse {
-    flex-direction: row;
-  }
-
-  .col--push-left,
-  .col--push-right {
-    transition: none;
-  }
-}
-
-// Legacy gap support fallback
-
-@supports not (gap: 1rem) {
-  .grid--gap {
-    margin-inline: calc(-1 * #{$base} / 2);
-
-    > .col {
-      padding-inline: calc(#{$base} / 2);
-    }
-  }
-
-  .grid--gap-sm {
-    margin-inline: calc(-1 * (#{$base} / 2) / 2);
-
-    > .col {
-      padding-inline: calc(#{$base} / 4);
-    }
-  }
-
-  .grid--gap-lg {
-    margin-inline: calc(-1 * (#{$base} * 2) / 2);
-
-    > .col {
-      padding-inline: #{$base};
     }
   }
 }
