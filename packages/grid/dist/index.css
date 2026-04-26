@@ -530,7 +530,7 @@
     display: none !important;
   }
 }
-@media (width<=29.99rem) {
+@media (width<30rem) {
   .hidden-sm-down {
     display: none !important;
   }
@@ -546,7 +546,7 @@
 .visible-sm-down {
   display: none !important;
 }
-@media (width<=29.99rem) {
+@media (width<30rem) {
   .visible-sm-down {
     display: block !important;
   }
@@ -556,7 +556,7 @@
     display: none !important;
   }
 }
-@media (width<=63.99rem) {
+@media (width<64rem) {
   .hidden-md-down {
     display: none !important;
   }
@@ -572,7 +572,7 @@
 .visible-md-down {
   display: none !important;
 }
-@media (width<=63.99rem) {
+@media (width<64rem) {
   .visible-md-down {
     display: block !important;
   }
@@ -582,7 +582,7 @@
     display: none !important;
   }
 }
-@media (width<=84.99rem) {
+@media (width<85rem) {
   .hidden-lg-down {
     display: none !important;
   }
@@ -598,38 +598,9 @@
 .visible-lg-down {
   display: none !important;
 }
-@media (width<=84.99rem) {
+@media (width<85rem) {
   .visible-lg-down {
     display: block !important;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .grid--reverse {
-    flex-direction: row;
-  }
-  .col--push-left,
-  .col--push-right {
-    transition: none;
-  }
-}
-@supports not (gap: 1rem) {
-  .grid--gap {
-    margin-inline: -0.25rem;
-  }
-  .grid--gap > .col {
-    padding-inline: 0.25rem;
-  }
-  .grid--gap-sm {
-    margin-inline: -0.125rem;
-  }
-  .grid--gap-sm > .col {
-    padding-inline: 0.125rem;
-  }
-  .grid--gap-lg {
-    margin-inline: -0.5rem;
-  }
-  .grid--gap-lg > .col {
-    padding-inline: 0.5rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

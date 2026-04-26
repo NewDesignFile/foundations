@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/foundations",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "New UI foundations",
   "source": "src/index.scss",
   "main": "dist/index.css",
@@ -17,8 +17,8 @@
     "packages/*"
   ],
   "scripts": {
-    "watch": "parcel watch",
-    "build": "parcel build",
+    "watch": "PARCEL_WORKERS=0 parcel watch",
+    "build": "PARCEL_WORKERS=0 parcel build",
     "lint": "stylelint \"**/*.scss\"",
     "format": "prettier --write .",
     "update:deps": "bunx npm-check-updates --deep --upgrade && bun install",
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/create-new-ui/foundations.git"
+    "url": "git+https://github.com/CreateNewUI/foundations.git"
   },
   "keywords": [
     "foundations",
@@ -45,22 +45,21 @@
   "author": "@planetabhi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/create-new-ui/foundations/issues"
+    "url": "https://github.com/CreateNewUI/foundations/issues"
   },
-  "homepage": "https://github.com/create-new-ui/foundations#readme",
+  "homepage": "https://github.com/CreateNewUI/foundations#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.16.3",
-    "autoprefixer": "^10.4.23",
-    "parcel": "^2.16.3",
-    "prettier": "^3.7.4",
-    "stylelint": "^16.26.1",
-    "stylelint-config-standard-scss": "^16.0.0"
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4",
+    "prettier": "^3.8.3",
+    "stylelint": "^17.9.0",
+    "stylelint-config-standard-scss": "^17.0.0"
   },
   "dependencies": {
-    "@new-ui/colors": "^2.2.3",
-    "@new-ui/effects": "^0.1.9",
-    "@new-ui/reset": "^0.1.1",
-    "@new-ui/spacings": "^0.1.8",
-    "@new-ui/typography": "^0.2.0"
+    "@new-ui/colors": "^2.2.4",
+    "@new-ui/effects": "^0.1.10",
+    "@new-ui/reset": "^0.1.2",
+    "@new-ui/spacings": "^0.1.9",
+    "@new-ui/typography": "^0.2.1"
   }
 }

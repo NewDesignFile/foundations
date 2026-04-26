@@ -28,7 +28,7 @@
   --perspective-normal: 31.25rem;
   --perspective-midrange: 50rem;
   --perspective-distant: 75rem;
-  --aspect-video: 16/9;
+  --aspect-video: 16 / 9;
   --default-transition-duration: 0.15s;
   --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

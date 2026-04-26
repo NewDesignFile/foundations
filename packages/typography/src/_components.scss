@@ -126,6 +126,7 @@ $mobile-breakpoint: 37.5rem;
 }
 
 .nu-c-code {
+  font-family: var(--monospace-code);
   font-size: var(--desktop-code);
   line-height: var(--desktop-code);
 

@@ -14,6 +14,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 figure,
 blockquote,
@@ -21,7 +23,6 @@ dl,
 dd {
   margin: 0;
   padding: 0;
-  margin-block-end: 0;
 }
 
 ul[role='list'],
@@ -37,7 +38,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 

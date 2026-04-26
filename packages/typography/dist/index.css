@@ -115,14 +115,7 @@
     sans-serif;
 }
 .nu-u-code {
-  font-family:
-    ui-monospace,
-    Cascadia Code,
-    Source Code Pro,
-    Menlo,
-    Consolas,
-    DejaVu Sans Mono,
-    monospace;
+  font-family: var(--monospace-code);
 }
 .nu-c-h1 {
   font-weight: 700;
@@ -249,6 +242,7 @@
   }
 }
 .nu-c-code {
+  font-family: var(--monospace-code);
   font-size: var(--desktop-code);
   line-height: var(--desktop-code);
 }
