@@ -5,11 +5,11 @@
     "": {
       "name": "@new-ui/foundations",
       "dependencies": {
-        "@new-ui/colors": "^2.2.3",
-        "@new-ui/effects": "^0.1.9",
-        "@new-ui/reset": "^0.1.1",
-        "@new-ui/spacings": "^0.1.8",
-        "@new-ui/typography": "^0.2.0",
+        "@new-ui/colors": "^2.2.4",
+        "@new-ui/effects": "^0.1.10",
+        "@new-ui/reset": "^0.1.2",
+        "@new-ui/spacings": "^0.1.9",
+        "@new-ui/typography": "^0.2.1",
       },
       "devDependencies": {
         "@parcel/transformer-sass": "^2.16.4",
