@@ -1,6 +1,6 @@
 {
   "name": "@new-ui/effects",
-  "version": "0.2.10",
+  "version": "0.1.10",
   "description": "Layering, elevations, and effects styles",
   "source": "src/index.scss",
   "main": "dist/index.css",
@@ -32,6 +32,6 @@
     "parcel": "^2.16.4"
   },
   "peerDependencies": {
-    "@new-ui/colors": ">=2.0.0"
+    "@new-ui/colors": "^2.0.0"
   }
 }
