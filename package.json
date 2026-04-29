@@ -52,12 +52,12 @@
     "@parcel/transformer-sass": "^2.16.4",
     "parcel": "^2.16.4",
     "prettier": "^3.8.3",
-    "stylelint": "^17.9.0",
+    "stylelint": "^17.9.1",
     "stylelint-config-standard-scss": "^17.0.0"
   },
   "dependencies": {
-    "@new-ui/colors": "^2.2.4",
-    "@new-ui/effects": "^0.1.10",
+    "@new-ui/colors": "^2.2.5",
+    "@new-ui/effects": "^0.1.11",
     "@new-ui/reset": "^0.1.2",
     "@new-ui/spacings": "^0.1.9",
     "@new-ui/typography": "^0.2.1"
