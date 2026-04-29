@@ -24,7 +24,7 @@ $breakpoints: (
 @mixin grid-gutter-reset {
   margin-inline: 0;
 
-  > .col {
+  > .nu-col {
     padding-inline: 0;
   }
 }
@@ -69,8 +69,8 @@ $breakpoints: (
 
 /// Container with responsive max-widths
 /// @example
-///   <div class="container">...</div>
-.container {
+///   <div class="nu-container">...</div>
+.nu-container {
   width: 100%;
   padding-inline: $base;
   margin-inline: auto;
@@ -78,17 +78,17 @@ $breakpoints: (
 
   @each $breakpoint, $value in $breakpoints {
     @include breakpoint($breakpoint) {
-      max-width: calc(#{$value} - #{$base});
+      max-width: calc(#{$value} - #{$base * 2});
     }
   }
 }
 
 /// Flexbox grid system
 /// @example
-///   <div class="grid">
-///     <div class="col">...</div>
+///   <div class="nu-grid">
+///     <div class="nu-col">...</div>
 ///   </div>
-.grid {
+.nu-grid {
   display: flex;
   flex-flow: row wrap;
   margin-inline: (-$base);
@@ -164,18 +164,12 @@ $breakpoints: (
   &--align-baseline {
     align-items: baseline;
   }
-
-  // Focus styles for accessibility
-  &:focus-visible {
-    outline: 2px solid currentcolor;
-    outline-offset: 2px;
-  }
 }
 
 /// Grid column
 /// @example
-///   <div class="col col--6">Half width</div>
-.col {
+///   <div class="nu-col nu-col--6">Half width</div>
+.nu-col {
   @extend %col-base;
 
   // Responsive column modifiers
@@ -191,6 +185,7 @@ $breakpoints: (
     }
   }
 
+  // Self-alignment within the grid row
   &--align-top {
     align-self: flex-start;
   }
@@ -211,21 +206,22 @@ $breakpoints: (
     align-self: baseline;
   }
 
-  &--top,
-  &--bottom,
-  &--middle {
+  // Inner content vertical positioning (turns column into flex column)
+  &--content-top,
+  &--content-bottom,
+  &--content-middle {
     @extend %col-flex-column;
   }
 
-  &--top {
+  &--content-top {
     justify-content: flex-start;
   }
 
-  &--bottom {
+  &--content-bottom {
     justify-content: flex-end;
   }
 
-  &--middle {
+  &--content-middle {
     justify-content: center;
   }
 
@@ -245,10 +241,12 @@ $breakpoints: (
     margin-inline-start: auto;
   }
 
-  &--fixed {
+  // Don't grow or shrink, keep intrinsic size
+  &--no-grow {
     flex: 0 0 auto;
   }
 
+  // Size to content, remove max-width constraint
   &--auto {
     flex: 0 0 auto;
     width: auto;
@@ -264,29 +262,23 @@ $breakpoints: (
       flex-grow: $i;
     }
   }
-
-  // Focus styles for accessibility
-  &:focus-visible {
-    outline: 2px solid currentcolor;
-    outline-offset: 2px;
-  }
 }
 
 // Visibility utilities
 @each $breakpoint, $value in $breakpoints {
-  .hidden-#{$breakpoint}-up {
+  .nu-u-hidden-#{$breakpoint}-up {
     @include breakpoint($breakpoint) {
       display: none !important;
     }
   }
 
-  .hidden-#{$breakpoint}-down {
+  .nu-u-hidden-#{$breakpoint}-down {
     @media (width < #{$value}) {
       display: none !important;
     }
   }
 
-  .visible-#{$breakpoint}-up {
+  .nu-u-visible-#{$breakpoint}-up {
     display: none !important;
 
     @include breakpoint($breakpoint) {
@@ -294,7 +286,7 @@ $breakpoints: (
     }
   }
 
-  .visible-#{$breakpoint}-down {
+  .nu-u-visible-#{$breakpoint}-down {
     display: none !important;
 
     @media (width < #{$value}) {
